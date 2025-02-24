@@ -42,6 +42,31 @@ header {
     margin: auto;
 }
 
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.photo {
+    margin-left: 15px; /* Espace entre le texte et l'image */
+    float: right;
+    max-width: 300px; /* Ajustez la taille de l'image si nécessaire */
+    opacity: 0; /* L'image est invisible au départ */
+    transform: scale(0.8);
+    animation: fadeIn 1.5s ease-out forwards; 
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 section {
     padding: 40px;
     text-align: left;
@@ -134,4 +159,15 @@ section {
         flex-direction: row;
         align-items: center;
     }
+
+    .content {  
+        flex-direction: column; /* Passe en disposition verticale */
+        align-items: center; /* Centre les éléments horizontalement */
+        text-align: center; /* Centre le texte */
+    }  
+    .content img {  
+        margin-top: 10px; /* Ajoute un espace entre le texte et l'image */
+        max-width: 100%; /* L'image occupe toute la largeur disponible */
+        height: auto; /* Maintient les proportions de l'image */
+    }  
 }
