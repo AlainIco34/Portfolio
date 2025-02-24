@@ -1,3 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@200..800&display=swap');
+
 body { 
-    background-color: grey;
+    background-color: #fff1e0;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header-menu {
+    display: flex; /* Aligne les éléments en ligne */
+    justify-content: flex-end; /* Centre le menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu li {
+    margin: 0 15px;
+}
+
+.header-menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.about{
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 40px;
+    text-align: left;
+}
+
+.Projet{
+    padding: 40px;
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+.competences {
+    max-width: 1200px;
+    margin: auto;
+}
+.competences ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+
+.competences li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competences li img {
+    width: 50px;
+    height: auto;
+    margin-block: 10px;
+}
+
+.menu-footer{
+    padding: 40px;
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+
+.menu-footer li a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu-footer ul img{
+    width: 50px;
+    height: auto;
+    margin-block: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        justify-content: center;
+    }
+    .about div img {
+        width: 50vw;
+    }
+    .competences ul {
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .header-menu{
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .header-menu li{
+        margin: 10px 0;
+    }
+
+    .menu-footer ul{
+        flex-direction: row;
+        align-items: center;
+    }
 }
