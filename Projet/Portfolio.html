@@ -12,7 +12,7 @@
         <div id="header">
             <nav>
                 <ul class="header-menu">
-                    <li><a href="#projet">Projets</a></li>
+                    <li><a href="#Projet">Projets</a></li>
                     <li><a href="#competences">Compétences</a></li>
                     <li><a href="#menu-footer">Contact</a></li>
                 </ul>
@@ -24,13 +24,35 @@
         <section class="about">
             <h3>À PROPOS DE MOI</h3>
             <div class="content">
-                <p>Actuellement étudiant en double Master en Informatique et en Management des Sciences et Technologies, je me perfectionne dans divers domaines de l’IT, notamment la programmation, le développement web et l’intelligence artificielle. Curieux et polyvalent, je m’intéresse également aux systèmes réseaux et à l’algorithmique du texte. Intégrer votre entreprise serait pour moi l’opportunité de mettre en pratique ces compétences et de contribuer efficacement à votre développement.</p>
+                <p style="text-align: justify;">Actuellement étudiant en double Master en Informatique et en Management des Sciences et Technologies, je me perfectionne dans divers domaines de l’IT, notamment la programmation, le développement web et l’intelligence artificielle. Curieux et polyvalent, je m’intéresse également aux systèmes réseaux et à l’algorithmique du texte. Intégrer votre entreprise serait pour moi l’opportunité de mettre en pratique ces compétences et de contribuer efficacement à votre développement.</p>
                 <img src="Img/Alaing.png" alt="Moi" class="photo">
             </div>
         </section>
 
         <section id="Projet">
             <h1>PROJETS</h1>
+            <div class="scroll-wrapper">
+                <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+                <div class="container">
+                    <div class="card" data-url="Sous-site/rest.html"><h2>Projet REST</h2></div>
+                    <div class="card" data-url="Sous-site/soap.html"><h2>Projet SOAP</h2></div>
+                    <div class="card" data-url="Sous-site/rmi.html"><h2>Projet RMI</h2></div>
+                    <div class="card" data-url="Sous-site/python-csv.html"><h2>Recolleur de fichier CSV</h2></div>
+                </div>
+                <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+            </div>
+
+            <h1> en cours de réalisation...</h1>
+            <div class="scroll-wrapper">
+                <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+                <div class="container">
+                    <div class="card" data-url="Sous-site/recherche.html"><h2>Projet de recherche</h2></div>
+                    <div class="card" data-url="Sous-site/qteach.html"><h2>Projet QTeach</h2></div>
+                    <div class="card" data-url="Sous-site/algo.html"><h2>Implémentation et comparaison algorithmique</h2></div>
+                    <div class="card" data-url="Sous-site/machine_learning.html"><h2>Projet Machine Learning</h2></div>
+                </div>
+                <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+            </div>
         </section>
 
         <section id="competences">
@@ -94,6 +116,8 @@
                   </a>
             </ul>
           </div>
+          <button id="backToTop">
+            <img src="Img/arrow_up.png" alt="Retour en haut"></button>
     </footer>
 </body>
 </html>

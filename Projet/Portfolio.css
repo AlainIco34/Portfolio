@@ -15,15 +15,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
 }
 
 .header-menu {
-    display: flex; /* Aligne les éléments en ligne */
-    justify-content: flex-end; /* Centre le menu */
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: 63%;
+    margin-block: 10px;
+
 }
 
 .header-menu li {
@@ -49,10 +50,10 @@ header {
 }
 
 .photo {
-    margin-left: 15px; /* Espace entre le texte et l'image */
+    margin-right: 15px; 
     float: right;
-    max-width: 300px; /* Ajustez la taille de l'image si nécessaire */
-    opacity: 0; /* L'image est invisible au départ */
+    max-width: 300px; 
+    opacity: 0; 
     transform: scale(0.8);
     animation: fadeIn 1.5s ease-out forwards; 
 }
@@ -66,7 +67,6 @@ header {
         transform: scale(1);
     }
 }
-
 section {
     padding: 40px;
     text-align: left;
@@ -78,6 +78,54 @@ section {
     justify-content: flex-start;
     max-width: 1200px;
     margin: auto;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    border-radius: 1rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+}
+
+.card{
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    background-color: #333; 
+    color: white; 
+    border: none;
+    font-size: 24px; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+.arrow.left {
+    position: absolute;
+    left: -20px; 
+}
+
+.arrow.right {
+    position: absolute;
+    right: -20px; 
 }
 #competences {
     max-width: 1200px;
@@ -134,6 +182,29 @@ section {
     margin-block: 10px;
 }
 
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none; /* Supprime le fond du bouton */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+    transition: opacity 0.3s;
+}
+
+#backToTop img {
+    width: 50px; /* Ajuste la taille de l'image */
+    height: 50px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#backToTop img:hover {
+    opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
     .about {
         justify-content: center;
@@ -148,7 +219,8 @@ section {
     }
     .header-menu{
         flex-direction:row;
-        align-items: center;
+        margin-left: 50px;
+        justify-content: flex-end;
     }
 
     .header-menu li{
@@ -160,14 +232,19 @@ section {
         align-items: center;
     }
 
+    .container {
+        width: 100%;
+        scroll-snap-align: center;
+    }
+
     .content {  
-        flex-direction: column; /* Passe en disposition verticale */
-        align-items: center; /* Centre les éléments horizontalement */
-        text-align: center; /* Centre le texte */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
     }  
     .content img {  
-        margin-top: 10px; /* Ajoute un espace entre le texte et l'image */
-        max-width: 100%; /* L'image occupe toute la largeur disponible */
-        height: auto; /* Maintient les proportions de l'image */
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
     }  
 }
