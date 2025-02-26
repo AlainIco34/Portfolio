@@ -15,28 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const backToTop = document.getElementById("backToTop");
+    const backToTop = document.querySelector("#backToTop");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 1100) {
-            backToTop.style.display = "block";
+            backToTop.classList.add('pouet')
         } else {
-            backToTop.style.display = "none";
+            backToTop.classList.remove('pouet')
         }
     });
 
     backToTop.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".card").forEach(card => {
-        card.addEventListener("click", () => {
-            const url = card.getAttribute("data-url");
-            if (url) {
-                window.location.href = url; // Redirige vers la page correspondante
-            }
-        });
     });
 });
