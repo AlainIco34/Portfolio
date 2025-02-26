@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 1100) {
-            backToTop.classList.add('pouet')
+            backToTop.classList.add('backToTopvVisible')
         } else {
-            backToTop.classList.remove('pouet')
+            backToTop.classList.remove('backToTopvVisible')
         }
     });
 

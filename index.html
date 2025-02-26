@@ -1,124 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alain - Portfolio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="Portfolio.css">
-    <script src="Portfolio.js" defer></script> 
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Portfolio.css" />
+    <script src="Portfolio.js" defer></script>
+  </head>
+  <body>
     <header>
-        <div id="header">
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="#Projet">Projets</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#menu-footer">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div id="header">
+        <nav>
+          <ul class="header-menu">
+            <li><a class="homeLink" href="#Projet">Projets</a></li>
+            <li><a class="homeLink" href="#competences">Compétences</a></li>
+            <li><a class="homeLink" href="#menu-footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main> 
-        <section class="about">
-            <h3>À PROPOS DE MOI</h3>
-            <div class="content">
-                <p style="text-align: justify;">Actuellement étudiant en double Master en Informatique et en Management des Sciences et Technologies, je me perfectionne dans divers domaines de l’IT, notamment la programmation, le développement web et l’intelligence artificielle. Curieux et polyvalent, je m’intéresse également aux systèmes réseaux et à l’algorithmique du texte. Intégrer votre entreprise serait pour moi l’opportunité de mettre en pratique ces compétences et de contribuer efficacement à votre développement.</p>
-                <img src="Img/Alaing.png" alt="Moi" class="photo">
-            </div>
-        </section>
+    <main>
+      <section class="about">
+        <h3>À PROPOS DE MOI</h3>
+        <div class="content">
+          <p style="text-align: justify">
+            Actuellement étudiant en double Master en Informatique et en
+            Management des Sciences et Technologies, je me perfectionne dans
+            divers domaines de l’IT, notamment la programmation, le
+            développement web et l’intelligence artificielle. Curieux et
+            polyvalent, je m’intéresse également aux systèmes réseaux et à
+            l’algorithmique du texte. Intégrer votre entreprise serait pour moi
+            l’opportunité de mettre en pratique ces compétences et de contribuer
+            efficacement à votre développement.
+          </p>
+          <img src="Img/Alaing.png" alt="Moi" class="photo" />
+        </div>
+      </section>
 
-        <section id="Projet">
-            <h1>PROJETS</h1>
-            <div class="scroll-wrapper">
-                <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
-                <div class="container">
-                    <a class="card" href="Sous-site/rest.html"><h2>Projet REST</h2></a>
-                    <a class="card" href="Sous-site/soap.html"><h2>Projet SOAP</h2></a>
-                    <a class="card" href="Sous-site/rmi.html"><h2>Projet RMI</h2></a>
-                    <a class="card" href="Sous-site/python-csv.html"><h2>Recolleur de fichier CSV</h2></a>
-                </div>
-                <button class="arrow right" onclick="scrollRight()">&#8250;</button>
-            </div>
+      <section id="Projet">
+        <h1>PROJETS</h1>
+        <div class="scroll-wrapper">
+          <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+          <div class="container">
+            <a class="card" href="Sous-site/rest.html"><h2>Projet REST</h2></a>
+            <a class="card" href="Sous-site/soap.html"><h2>Projet SOAP</h2></a>
+            <a class="card" href="Sous-site/rmi.html"><h2>Projet RMI</h2></a>
+            <a class="card" href="Sous-site/python-csv.html"
+              ><h2>Recolleur de fichier CSV</h2></a
+            >
+          </div>
+          <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+        </div>
 
-            <h1> en cours de réalisation...</h1>
-            <div class="scroll-wrapper">
-                <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
-                <div class="container">
-                    <a class="card" href="Sous-site/recherche.html"><h2>Projet de recherche</h2></a>
-                    <a class="card" href="Sous-site/qteach.html"><h2>Projet QTeach</h2></a>
-                    <a class="card" href="Sous-site/algo.html"><h2>Implémentation et comparaison algorithmique</h2></a>
-                    <a class="card" href="Sous-site/machine_learning.html"><h2>Projet Machine Learning</h2></a>
-                </div>
-                <button class="arrow right" onclick="scrollRight()">&#8250;</button>
-            </div>
-        </section>
+        <h1>en cours de réalisation...</h1>
+        <div class="scroll-wrapper">
+          <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+          <div class="container">
+            <a class="card" href="Sous-site/recherche.html"
+              ><h2>Projet de recherche</h2></a
+            >
+            <a class="card" href="Sous-site/qteach.html"
+              ><h2>Projet QTeach</h2></a
+            >
+            <a class="card" href="Sous-site/algo.html"
+              ><h2>Implémentation et comparaison algorithmique</h2></a
+            >
+            <a class="card" href="Sous-site/machine_learning.html"
+              ><h2>Projet Machine Learning</h2></a
+            >
+          </div>
+          <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+        </div>
+      </section>
 
-        <section id="competences">
-            <h1>COMPÉTENCES TECHNIQUES</h1>
-            <div>
-                <h3>Langages de programmation</h3>
-                <ul> 
-                    <li><img src="Img/javascript.png" alt="JavaScript"></li>
-                    <li><img src="Img/java.png" alt="Java"></li>
-                    <li><img src="Img/python.png" alt="Python"></li>
-                </ul>
-            </div>
+      <section id="competences">
+        <h1>COMPÉTENCES TECHNIQUES</h1>
+        <div>
+          <h3>Langages de programmation</h3>
+          <ul>
+            <li><img src="Img/javascript.png" alt="JavaScript" /></li>
+            <li><img src="Img/java.png" alt="Java" /></li>
+            <li><img src="Img/python.png" alt="Python" /></li>
+          </ul>
+        </div>
 
-            <div>
-                <h3>Base de données</h3>
-                <ul> 
-                    <li><img src="Img/mysql.png" alt="MySQL"></li>
-                    <li><img src="Img/sqlite.png" alt="SQLite"></li>
-                </ul>
-            </div>
+        <div>
+          <h3>Base de données</h3>
+          <ul>
+            <li><img src="Img/mysql.png" alt="MySQL" /></li>
+            <li><img src="Img/sqlite.png" alt="SQLite" /></li>
+          </ul>
+        </div>
 
-            <div>
-                <h3>Développement Web</h3>
-                <ul> 
-                    <li><img src="Img/html.png" alt="HTML"></li>
-                    <li><img src="Img/css.png" alt="CSS"></li>
-                    <li><img src="Img/Reactjs.png" alt="React.js"></li>
-                    <li><img src="Img/nodejs.png" alt="Node.js"></li>
-                    <li><img src="Img/vuejs.png" alt="Vue.js"></li>
-                </ul>
-            </div>
+        <div>
+          <h3>Développement Web</h3>
+          <ul>
+            <li><img src="Img/html.png" alt="HTML" /></li>
+            <li><img src="Img/css.png" alt="CSS" /></li>
+            <li><img src="Img/Reactjs.png" alt="React.js" /></li>
+            <li><img src="Img/nodejs.png" alt="Node.js" /></li>
+            <li><img src="Img/vuejs.png" alt="Vue.js" /></li>
+          </ul>
+        </div>
 
-            <div>
-                <h3>Intelligence Artificielle & Data Science</h3>
-                <ul> 
-                    <li><img src="Img/python.png" alt="Python"></li>
-                    <li><img src="Img/NumPy.png" alt="NumPy"></li>
-                </ul>
-            </div>
+        <div>
+          <h3>Intelligence Artificielle & Data Science</h3>
+          <ul>
+            <li><img src="Img/python.png" alt="Python" /></li>
+            <li><img src="Img/NumPy.png" alt="NumPy" /></li>
+          </ul>
+        </div>
 
-            <div>
-                <h3>Environnements de travail</h3>
-                <ul> 
-                    <li><img src="Img/Github.png" alt="GitHub"></li>
-                    <li><img src="Img/eclipse.png" alt="Eclipse"></li>
-                    <li><img src="Img/vscode.png" alt="VS Code"></li>
-                </ul>
-            </div>
-            
-        </section>
+        <div>
+          <h3>Environnements de travail</h3>
+          <ul>
+            <li><img src="Img/Github.png" alt="GitHub" /></li>
+            <li><img src="Img/eclipse.png" alt="Eclipse" /></li>
+            <li><img src="Img/vscode.png" alt="VS Code" /></li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
-        <div id="menu-footer">
-            <h1>CONTACT</h1>
-            <ul>
-                <a href="https://www.linkedin.com/in/alain-lé-0457b01b8">
-                    <img src="Img/linkedin.png" alt="link"></a>
-                <a href="https://github.com/AlainIco34">
-                    <img src="Img/Github.png" alt="Git"></a>
-                <a href="mailto:masterico34@gmail.com">
-                    <img src="Img/mail.png" alt="mail"></a>
-            </ul>
-          </div>
-          <button id="backToTop">
-            <img src="Img/arrow_up.png" alt="Retour en haut"></button>
+      <div id="menu-footer">
+        <h1>CONTACT</h1>
+        <ul>
+          <a class="footerLink" href="https://www.linkedin.com/in/alain-lé-0457b01b8">
+            <img src="Img/linkedin.png" alt="link"
+          /></a>
+          <a class="footerLink" href="https://github.com/AlainIco34">
+            <img src="Img/Github.png" alt="Git"
+          /></a>
+          <a class="footerLink" href="mailto:masterico34@gmail.com">
+            <img src="Img/mail.png" alt="mail"
+          /></a>
+        </ul>
+      </div>
+      <button id="backToTop">
+        <img src="Img/arrow_up.png" alt="Retour en haut" />
+      </button>
     </footer>
-</body>
+  </body>
 </html>
